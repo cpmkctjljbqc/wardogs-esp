@@ -1,0 +1,118 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" width="256" height="256">
+  <defs>
+    <clipPath id="crackClip">
+      <polygon points="0,0 256,0 256,256 0,256"/>
+      <polygon points="126,0 134,38 118,74 142,108 128,146 136,192 120,224 116,256 0,256 0,0" fill="black"/>
+    </clipPath>
+  </defs>
+
+  <!-- Background: dark tactical plate with sharp angular cut -->
+  <path d="M0,0 L256,0 L256,200 L198,256 L0,256 Z" fill="#0b0f0c"/>
+
+  <!-- Corner geometric frame cuts -->
+  <polyline points="14,42 14,14 42,14" fill="none" stroke="#c8d6c0" stroke-width="2.5"/>
+  <polyline points="214,14 242,14 242,42" fill="none" stroke="#c8d6c0" stroke-width="2.5"/>
+  <polyline points="14,214 14,242 42,242" fill="none" stroke="#c8d6c0" stroke-width="2.5"/>
+  <polyline points="242,214 242,242 214,242" fill="none" stroke="#c8d6c0" stroke-width="2.5"/>
+
+  <!-- Off-center reticle crosshair - aggressive, cropped, not centered -->
+  <g stroke="#7dff4a" stroke-width="2" fill="none" opacity="0.85">
+    <!-- Long horizontal line, offset right -->
+    <line x1="30" y1="118" x2="226" y2="118"/>
+    <!-- Long vertical line, offset down -->
+    <line x1="138" y1="30" x2="138" y2="226"/>
+    <!-- Reticle tick marks: broken, asymmetric -->
+    <line x1="138" y1="30" x2="138" y2="58" stroke-width="3"/>
+    <line x1="138" y1="200" x2="138" y2="226" stroke-width="3"/>
+    <line x1="30" y1="118" x2="58" y2="118" stroke-width="3"/>
+    <line x1="214" y1="118" x2="226" y2="118" stroke-width="3"/>
+    <!-- Diagonal range ticks (angled) -->
+    <line x1="78" y1="78" x2="90" y2="90" stroke="#ffb000" stroke-width="2"/>
+    <line x1="198" y1="78" x2="186" y2="90" stroke="#ffb000" stroke-width="2"/>
+    <line x1="78" y1="158" x2="90" y2="146" stroke="#ffb000" stroke-width="2"/>
+  </g>
+
+  <!-- Cracked canine skull fused with reticle -->
+  <g>
+    <!-- Skull main mass: angular, jagged, wolf-like -->
+    <path d="M138,62
+             L154,54 L172,60 L184,76 L188,96
+             L186,112 L194,126 L190,142
+             L178,148 L170,162 L164,174
+             L154,182 L148,192 L140,198
+             L132,192 L124,182 L116,174
+             L108,162 L98,148 L86,142
+             L82,126 L90,112 L88,96
+             L92,76 L104,60 L122,54 Z"
+          fill="#0b0f0c" stroke="#c8d6c0" stroke-width="2.5"/>
+
+    <!-- Crack lines across skull - aggressive diagonal fractures -->
+    <polyline points="104,72 116,84 110,96 120,108 114,124" fill="none" stroke="#c8d6c0" stroke-width="1.8"/>
+    <polyline points="154,66 146,82 152,96 144,112 150,126" fill="none" stroke="#c8d6c0" stroke-width="1.5"/>
+    <polyline points="120,108 132,102 142,106 150,100" fill="none" stroke="#ffb000" stroke-width="1.2" opacity="0.7"/>
+    <polyline points="110,140 124,134 132,140 142,132" fill="none" stroke="#ffb000" stroke-width="1.2" opacity="0.6"/>
+
+    <!-- Left eye socket: EMPTY (dark hollow) -->
+    <path d="M104,94 L118,88 L128,94 L124,108 L110,108 Z" fill="#0b0f0c" stroke="#7dff4a" stroke-width="2"/>
+
+    <!-- Right eye socket: replaced by glowing phosphor reticle eye -->
+    <circle cx="158" cy="96" r="14" fill="none" stroke="#7dff4a" stroke-width="2.5"/>
+    <circle cx="158" cy="96" r="6" fill="#7dff4a" opacity="0.9"/>
+    <circle cx="158" cy="96" r="10" fill="none" stroke="#7dff4a" stroke-width="0.8" opacity="0.5"/>
+    <!-- Glow crosshair inside eye -->
+    <line x1="158" y1="80" x2="158" y2="90" stroke="#7dff4a" stroke-width="1.5"/>
+    <line x1="158" y1="102" x2="158" y2="112" stroke="#7dff4a" stroke-width="1.5"/>
+    <line x1="142" y1="96" x2="150" y2="96" stroke="#7dff4a" stroke-width="1.5"/>
+    <line x1="166" y1="96" x2="174" y2="96" stroke="#7dff4a" stroke-width="1.5"/>
+
+    <!-- Snout / muzzle: angular wedge -->
+    <path d="M124,148 L132,140 L144,140 L152,148 L148,164 L140,172 L132,172 L126,164 Z"
+          fill="#0b0f0c" stroke="#c8d6c0" stroke-width="2"/>
+
+    <!-- Fangs / teeth: sharp triangles -->
+    <polygon points="130,164 133,176 136,164" fill="#c8d6c0"/>
+    <polygon points="140,164 143,176 146,164" fill="#c8d6c0"/>
+    <polygon points="124,160 126,168 128,160" fill="#7dff4a" opacity="0.7"/>
+    <polygon points="148,160 150,168 152,160" fill="#7dff4a" opacity="0.7"/>
+
+    <!-- Jaw line fracture -->
+    <polyline points="118,136 130,144 140,138 152,146" fill="none" stroke="#ffb000" stroke-width="1.8"/>
+
+    <!-- Left ear: jagged/pointed -->
+    <polygon points="104,60 96,34 112,46 120,54" fill="#0b0f0c" stroke="#c8d6c0" stroke-width="2"/>
+    <polygon points="106,52 100,38 110,48" fill="#0b0f0c"/>
+
+    <!-- Right ear -->
+    <polygon points="172,60 180,34 164,46 156,54" fill="#0b0f0c" stroke="#c8d6c0" stroke-width="2"/>
+    <polygon points="170,52 176,38 166,48" fill="#0b0f0c"/>
+
+    <!-- Nasal cavity -->
+    <polygon points="132,152 136,148 140,152 136,158" fill="#c8d6c0" opacity="0.6"/>
+
+    <!-- Scanline accent across skull -->
+    <line x1="86" y1="132" x2="194" y2="132" stroke="#7dff4a" stroke-width="0.8" opacity="0.4"/>
+    <line x1="86" y1="136" x2="194" y2="136" stroke="#7dff4a" stroke-width="0.5" opacity="0.25"/>
+  </g>
+
+  <!-- Targeting brackets - corner sniper style, offset -->
+  <g stroke="#ffb000" stroke-width="2.5" fill="none">
+    <polyline points="64,64 52,64 52,76"/>
+    <polyline points="200,64 212,64 212,76"/>
+    <polyline points="64,180 52,180 52,168"/>
+    <polyline points="200,180 212,180 212,168"/>
+  </g>
+
+  <!-- Small tactical marker dots -->
+  <circle cx="52" cy="118" r="2" fill="#ffb000" opacity="0.8"/>
+  <circle cx="212" cy="118" r="2" fill="#ffb000" opacity="0.8"/>
+  <circle cx="138" cy="44" r="1.5" fill="#7dff4a" opacity="0.6"/>
+  <circle cx="138" cy="212" r="1.5" fill="#7dff4a" opacity="0.6"/>
+
+  <!-- Wordmark: small, bottom, tactical -->
+  <text x="128" y="242" font-family="monospace" font-size="9" fill="#c8d6c0" text-anchor="middle" letter-spacing="3" opacity="0.7">WARDOGS-ESP</text>
+
+  <!-- Subtle glitch slice on left edge -->
+  <rect x="22" y="98" width="6" height="2" fill="#7dff4a" opacity="0.5"/>
+  <rect x="22" y="134" width="10" height="1.5" fill="#7dff4a" opacity="0.35"/>
+  <rect x="224" y="106" width="8" height="2" fill="#ffb000" opacity="0.4"/>
+</svg>
