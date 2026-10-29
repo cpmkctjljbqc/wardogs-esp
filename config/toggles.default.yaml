@@ -1,0 +1,29 @@
+# Default feature toggles for wardogs-esp
+aimbot:
+  enabled: true
+  key: "F1"
+  fov: 120
+  smooth: 4.5
+  bone: "head"
+  prediction: true
+esp:
+  enabled: true
+  key: "F2"
+  box: true
+  skeleton: true
+  health_bar: true
+  name_tags: true
+  max_distance: 350
+  team_filter: true
+wallhack:
+  enabled: false
+  key: "F3"
+  transparency: 0.35
+radar:
+  enabled: true
+  key: "F4"
+  scale: 1.0
+misc:
+  no_recoil: true
+  no_flash: false
+  streamer_mode: false
